@@ -1,9 +1,12 @@
 #include <stdio.h>
 #define MAX 30
 
+{
 
 int segregate(int a[], int l)
+
 {
+
 	int c=0;
 	for(int i=0;i<l;i++)
 	{
@@ -28,25 +31,38 @@ display(int a[],int l){
 
 
 int segregate2(int a[], int l)
+
 {
 	int left,right;
+	
 	for(left=0,right=l;left<right;left++,right--)
+	
 	{
+	
 		while(a[left]==0 && left<right)
 		{
 			left++;
 		}
-		while(a[right]==1 && left <right)
-		{
+	
+	while(a[right]==1 && left <right)
+	
+	{
 			right--;
 		}
-		if(left<right)
-		{
+	
+	if(left<right)
+	
+	{
 			int temp=a[left];
 			a[left]=a[right];
 			a[right]=temp;
 		}
+	
 	}
+	
+	
+	}
+
 }
 int main(void) {
 
